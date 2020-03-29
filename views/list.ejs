@@ -1,0 +1,26 @@
+
+<%- include("header") -%>
+    <div class="box-button">
+        <!-- <form action="/showLists" method="GET"> -->
+            <button type="submit" name="list" value="<%= listTitle %>" class="btn btn-secondary" onclick="location='/showLists'">Show / Delete To-Do Lists</button>
+        <!-- </form> -->
+    </div>
+
+    <div class="box">
+        <% newListItems.forEach(item => { %>
+            <form action="/delete" method="POST" >
+                <div class="item">
+                    <input type="checkbox" name="checkbox" value="<%= item._id%>" onchange="this.form.submit()">
+                    <p><%= item.name %></p>
+                </div>
+                <input type="hidden" name="listName" class="newList" placeholder="Add New ToDo List" value="<%= listTitle %>"></input>
+            </form>
+        <% }) %>
+        
+        <form class="item" action="/" method="POST">
+            <input type="text" name="newItem" class="newItemInput" placeholder="New Item" autocomplete="off"></input>
+            <button type="submit" name="list" value="<%= listTitle %>" class="btn-addNew">+</button>
+        </form>
+    </div>
+
+<%- include("footer") -%>

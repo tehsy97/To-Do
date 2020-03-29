@@ -1,0 +1,17 @@
+<%- include("header") -%>
+
+    <div class="box">      
+                <div class="item" onclick="location= '/';">
+                    <p>Today (Default List)</p>
+                </div>
+            <% newListItems.forEach(item => { %>
+                <form action="/delete_lists" method="POST">
+                    <div class="item" onclick="location= '/<%= item.name %>';">
+                        <input type="checkbox" name="checkbox" value="<%= item._id%>" onchange="this.form.submit()">
+                            <p><%= item.name %></p>
+                    </div>
+                </form>
+            <% }) %>
+    </div>
+
+<%- include("footer") -%>
