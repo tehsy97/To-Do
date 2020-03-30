@@ -5,7 +5,7 @@ $('#heading').focus(function() {
     $(this).css('font-size', '20px');
     $(this).attr('placeholder', 'Go to / Create List');
 }).blur(function() { 
-    $(this).css('font-size', '40px');
+    $(this).css('font-size', '35px');
     $(this).attr('placeholder', title);
 });
 

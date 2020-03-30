@@ -29,7 +29,7 @@ h1 {
 }
 
 .box-button{
-  max-width: 201.5px;
+  max-width: 207.5px;
   margin: 20px auto;
   background: white;
   border-radius: 5px;
@@ -112,7 +112,7 @@ button:hover, input.form-control:hover {
   border: inherit;
   box-shadow: none !important;
   padding: 40px;
-  font-size: 40px;
+  font-size: 35px;
 }
 
 ::placeholder {
