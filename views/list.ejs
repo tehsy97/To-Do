@@ -1,9 +1,9 @@
 
 <%- include("header") -%>
     <div class="box-button">
-        <!-- <form action="/showLists" method="GET"> -->
-            <button type="submit" name="list" value="<%= listTitle %>" class="btn btn-secondary" onclick="location='/showLists'">Show / Delete To-Do Lists</button>
-        <!-- </form> -->
+            <button type="submit" name="list" value="<%= listTitle %>" class="btn btn-secondary">
+                <a href="/showLists">Show / Delete To-Do Lists</a>
+            </button>
     </div>
 
     <div class="box">

@@ -12,6 +12,14 @@ h1 {
   padding: 10px;
 }
 
+button a, button a:active, button a:hover {
+  color: #fff;
+}
+
+.todoList, .todoList:hover, .todoList:active{
+  text-decoration-color: rgba(0, 0, 0, 0.5);
+}
+
 .box {
   max-width: 400px;
   margin: 50px auto;
