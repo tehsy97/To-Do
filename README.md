@@ -1,7 +1,7 @@
 # To-Do
-This is a simple To-Do list that allows users to create custom title to-do list.
+This is a simple To-Do Lists app that allows users to create custom title to-do lists.
 
-Users can choose to add items to a default list or the custom list.
+Users can choose to add items to a default list or the custom-title lists.
 
 Custom Lists and items associated with lists are stored in MongoDB database. 
 
